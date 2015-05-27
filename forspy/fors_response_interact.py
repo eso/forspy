@@ -171,14 +171,11 @@ except ImportError:
   print "Error importing modules pyfits, wx, matplotlib, numpy"
 
 #This is the 'main' function
-if __name__ == '__main__':
-
+def main(args=None):
   # import reflex modules
-  #from reflexy.base reflex_interactive_app
+  from reflexy.base import reflex_interactive_app
   import sys
 
-  # import UVES reflex modules
-  from fors_plot_common import *
 
   # Create interactive application
   interactive_app = reflex_interactive_app.PipelineInteractiveApp()

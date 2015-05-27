@@ -282,10 +282,11 @@ except ImportError:
   print "Error importing modules pyfits, wx, matplotlib, numpy"
 
 #This is the 'main' function
-if __name__ == '__main__':
+def main(args=None):
 
   # import reflex modules
-  import reflex_interactive_app
+  from reflexy.base import reflex_interactive_app
+
   import sys
 
   # import UVES reflex modules
